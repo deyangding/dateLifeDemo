@@ -1,0 +1,2917 @@
+{
+  "ro": {
+    "name": {
+      "singular": "salesInformationSku",
+      "plural": "salesInformationSkus"
+    },
+    "title": "Sales Information Sku",
+    "attributes": {
+      "sensitiveWordDetection": false,
+      "canExport": false,
+      "udfEnabled": true,
+      "canImport": false,
+      "multilingual": true
+    }
+  },
+  "properties": {
+    "vendorChannelSku": {
+      "isUdf": false,
+      "dataType": "Object",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Vendor Channel Sku",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "docNum": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": false,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Vendor Channel Sku Doc No.",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": false,
+              "multilingual": false,
+              "maxLength": 20
+            }
+          },
+          "docLineId": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Vendor Channel Sku Line Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "docId": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Vendor Channel Sku Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "corpUin": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Vendor Channel Sku Tenant ID",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          }
+        }
+      }
+    },
+    "lastModifiedTime": {
+      "isUdf": false,
+      "dataType": "String",
+      "boPropertyType": "DateTime",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Modification Time",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "quantity": {
+      "isUdf": false,
+      "dataType": "Decimal",
+      "boPropertyType": "Quantity",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Quantity",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "volumeDiscountPrice": {
+      "isUdf": false,
+      "dataType": "Collection",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Volume Discount Price",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "ro": {
+          "name": {
+            "singular": "volumeDiscountPrice",
+            "plural": "volumeDiscountPrices"
+          },
+          "title": null,
+          "attributes": {
+            "sensitiveWordDetection": false,
+            "canExport": false,
+            "udfEnabled": false,
+            "canImport": false,
+            "multilingual": false
+          }
+        },
+        "properties": {
+          "lastModifiedTime": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "DateTime",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Modification Time",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "minQuantity": {
+            "isUdf": false,
+            "dataType": "Decimal",
+            "boPropertyType": "Quantity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Min Quantity",
+              "searchable": false,
+              "required": true,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "createdBy": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creator",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "nickname": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Nickname",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Id",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "username": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Username",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "users",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "nickname",
+                  "to": "createdBy.nickname",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "username",
+                  "to": "createdBy.username",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "createdBy.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "lastModifiedBy": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Modifier",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "nickname": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Modifier Nickname",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Modifier Id",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "username": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Modifier Username",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "users",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "nickname",
+                  "to": "lastModifiedBy.nickname",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "username",
+                  "to": "lastModifiedBy.username",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "lastModifiedBy.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "createdTime": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "DateTime",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creation Time",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "grossPrice": {
+            "isUdf": false,
+            "dataType": "Decimal",
+            "boPropertyType": "Price",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "GrossPrice",
+              "searchable": false,
+              "required": true,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "version": {
+            "isUdf": false,
+            "dataType": "Numerical",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Version",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          }
+        }
+      }
+    },
+    "minimumOrderQuantity": {
+      "isUdf": false,
+      "dataType": "Decimal",
+      "boPropertyType": "Quantity",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Minimum Order Quantity",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "lastModifiedBy": {
+      "isUdf": false,
+      "dataType": "Object",
+      "boPropertyType": "Reference",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Modifier",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "nickname": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Modifier Nickname",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": true,
+              "multilingual": false,
+              "maxLength": 50
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Modifier Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "username": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Modifier Username",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": true,
+              "multilingual": false,
+              "maxLength": 50
+            }
+          }
+        }
+      },
+      "referenceConfig": {
+        "referenceRo": "users",
+        "useSearch": false,
+        "mappings": [
+          {
+            "from": "nickname",
+            "to": "lastModifiedBy.nickname",
+            "type": "CACHED"
+          },
+          {
+            "from": "username",
+            "to": "lastModifiedBy.username",
+            "type": "CACHED"
+          },
+          {
+            "from": "id",
+            "to": "lastModifiedBy.id",
+            "isKey": true,
+            "type": "CACHED"
+          }
+        ]
+      }
+    },
+    "idempotentToken": {
+      "isUdf": false,
+      "dataType": "String",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "IdempotentToken",
+        "searchable": false,
+        "required": false,
+        "positiveOrZero": false,
+        "readonly": false,
+        "multilingual": false,
+        "maxLength": 50
+      }
+    },
+    "description": {
+      "isUdf": false,
+      "dataType": "String",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Description",
+        "searchable": false,
+        "required": false,
+        "positiveOrZero": false,
+        "readonly": false,
+        "multilingual": true,
+        "maxLength": 500
+      }
+    },
+    "externalId": {
+      "isUdf": false,
+      "dataType": "String",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "ExternalId",
+        "searchable": false,
+        "required": false,
+        "positiveOrZero": false,
+        "readonly": false,
+        "multilingual": false,
+        "maxLength": 50
+      }
+    },
+    "grossPrice": {
+      "isUdf": false,
+      "dataType": "Decimal",
+      "boPropertyType": "Price",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Gross Price",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": true
+      }
+    },
+    "udfs": {
+      "isUdf": true,
+      "dataType": "Object",
+      "embedded": {
+        "properties": {
+          "original": {
+            "isUdf": true,
+            "dataType": "String",
+            "boPropertyType": "String",
+            "attributes": {
+              "filterable": true,
+              "uiReadonly": false,
+              "label": "original",
+              "sortable": false,
+              "maxLength": 50,
+              "required": false,
+              "searchable": false,
+              "multilingual": true
+            }
+          }
+        }
+      }
+    },
+    "skuPicture": {
+      "isUdf": false,
+      "dataType": "Object",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "showUrl": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Image",
+            "attributes": {
+              "filterable": false,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "SKU Picture",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": false,
+              "multilingual": false,
+              "maxLength": 500
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "SKU Picture Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "isUdf": false,
+      "dataType": "String",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Source",
+        "searchable": false,
+        "required": false,
+        "positiveOrZero": false,
+        "readonly": false,
+        "multilingual": false,
+        "maxLength": 50
+      }
+    },
+    "isMainProduct": {
+      "isUdf": false,
+      "dataType": "Enum",
+      "boPropertyType": "YesNoStatus",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Main Product",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "validValues": {
+        "Y": {
+          "order": 0,
+          "label": "Yes"
+        },
+        "N": {
+          "order": 1,
+          "label": "No"
+        }
+      }
+    },
+    "version": {
+      "isUdf": false,
+      "dataType": "Numerical",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Version",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "uom": {
+      "isUdf": false,
+      "dataType": "Object",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "name": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "UoM",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": false,
+              "multilingual": true,
+              "maxLength": 20
+            }
+          }
+        }
+      }
+    },
+    "createdBy": {
+      "isUdf": false,
+      "dataType": "Object",
+      "boPropertyType": "Reference",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Creator",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "nickname": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creator Nickname",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": true,
+              "multilingual": false,
+              "maxLength": 50
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creator Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "username": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creator Username",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": true,
+              "multilingual": false,
+              "maxLength": 50
+            }
+          }
+        }
+      },
+      "referenceConfig": {
+        "referenceRo": "users",
+        "useSearch": false,
+        "mappings": [
+          {
+            "from": "nickname",
+            "to": "createdBy.nickname",
+            "type": "CACHED"
+          },
+          {
+            "from": "username",
+            "to": "createdBy.username",
+            "type": "CACHED"
+          },
+          {
+            "from": "id",
+            "to": "createdBy.id",
+            "isKey": true,
+            "type": "CACHED"
+          }
+        ]
+      }
+    },
+    "skuAttributes": {
+      "isUdf": false,
+      "dataType": "Collection",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "ro": {
+          "name": {
+            "singular": "salesInformationSkuAttribute",
+            "plural": "salesInformationSkuAttributes"
+          },
+          "title": null,
+          "attributes": {
+            "sensitiveWordDetection": false,
+            "canExport": false,
+            "udfEnabled": false,
+            "canImport": false,
+            "multilingual": true
+          }
+        },
+        "properties": {
+          "lastModifiedTime": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "DateTime",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "skuAttributeDict": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "name": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": false,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": null,
+                    "searchable": false,
+                    "required": true,
+                    "regExp": {
+                      "value": "^((?![,;:，：；]).)*$",
+                      "errMsg": "The attribute name does not support the input of Chinese and English commas, colons and semicolons"
+                    },
+                    "positiveOrZero": false,
+                    "readonly": false,
+                    "multilingual": true,
+                    "maxLength": 50
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": false,
+                    "uiReadonly": false,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "type": {
+                  "isUdf": false,
+                  "dataType": "Enum",
+                  "attributes": {
+                    "visible": true,
+                    "uiReadonly": false,
+                    "sortable": false,
+                    "label": "Product Attribute Input Type ",
+                    "required": true,
+                    "positiveOrZero": false,
+                    "readonly": false,
+                    "multilingual": false,
+                    "boChange": true
+                  },
+                  "validValues": {
+                    "INPUT": {
+                      "order": 0,
+                      "label": "Input"
+                    },
+                    "SINGLE_SELECT": {
+                      "order": 1,
+                      "label": "Single Select"
+                    },
+                    "MULTIPLE_SELECT": {
+                      "order": 2,
+                      "label": "Multiple Select"
+                    }
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "skuAttributeDicts",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "mashup": true,
+                  "from": "name",
+                  "to": "skuAttributeDict.name",
+                  "type": "CACHED"
+                },
+                {
+                  "mashup": true,
+                  "from": "type",
+                  "to": "skuAttributeDict.type",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "skuAttributeDict.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "createdBy": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "nickname": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "maxLength": 50,
+                    "positiveOrZero": false
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "username": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "maxLength": 50,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "users",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "nickname",
+                  "to": "createdBy.nickname",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "username",
+                  "to": "createdBy.username",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "createdBy.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "lastModifiedBy": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "nickname": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "maxLength": 50,
+                    "positiveOrZero": false
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "username": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "maxLength": 50,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "users",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "nickname",
+                  "to": "lastModifiedBy.nickname",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "username",
+                  "to": "lastModifiedBy.username",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "lastModifiedBy.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "createdTime": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "DateTime",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "version": {
+            "isUdf": false,
+            "dataType": "Numerical",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          },
+          "skuAttributeDictValue": {
+            "isUdf": false,
+            "dataType": "Object",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": false,
+                    "uiReadonly": false,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "value": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": false,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Value",
+                    "searchable": false,
+                    "required": true,
+                    "regExp": {
+                      "value": "^((?![,;:，：；]).)*$",
+                      "errMsg": "Attribute value does not support input of Chinese and English commas, colons and semicolons"
+                    },
+                    "positiveOrZero": false,
+                    "readonly": false,
+                    "multilingual": true,
+                    "maxLength": 50
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "skuAttributeDictValues",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "mashup": true,
+                  "from": "value",
+                  "to": "skuAttributeDictValue.value",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "skuAttributeDictValue.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "createdTime": {
+      "isUdf": false,
+      "dataType": "String",
+      "boPropertyType": "DateTime",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Creation Time",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "id": {
+      "isUdf": false,
+      "dataType": "String",
+      "boPropertyType": "Identity",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Sales Information Sku Id",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      }
+    },
+    "salesInfo": {
+      "isUdf": false,
+      "dataType": "Object",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "ro": {
+          "name": {
+            "singular": "salesInformation",
+            "plural": "salesInformations"
+          },
+          "title": "Product",
+          "attributes": {
+            "sensitiveWordDetection": false,
+            "canExport": true,
+            "udfEnabled": true,
+            "canImport": true,
+            "multilingual": true
+          }
+        },
+        "properties": {
+          "seller": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Seller",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "name": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Seller Name",
+                    "searchable": true,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 100
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Seller ID",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "corpUin": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Seller Tenant ID",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "siteTraders",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "tenant.name",
+                  "to": "seller.name",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "seller.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "industrySite": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "IndustrySite",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "IndustrySite Id",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "industrySites",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "mashup": true,
+                  "from": "name",
+                  "to": "industrySite.name",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "industrySite.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "material": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Material",
+              "searchable": false,
+              "required": false,
+              "positiveOrZero": false,
+              "readonly": true,
+              "multilingual": true,
+              "maxLength": 100
+            }
+          },
+          "createdBy": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Creator",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "nickname": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Nickname",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Id",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "username": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Creator Username",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": false,
+                    "maxLength": 50
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "users",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "from": "nickname",
+                  "to": "createdBy.nickname",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "username",
+                  "to": "createdBy.username",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "createdBy.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "shippingAddress": {
+            "isUdf": false,
+            "dataType": "Object",
+            "attributes": {
+              "filterable": false,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Shipping Address",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "country": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "code": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "Country code",
+                          "searchable": false,
+                          "required": false,
+                          "positiveOrZero": false,
+                          "readonly": true,
+                          "multilingual": false,
+                          "maxLength": 20
+                        }
+                      },
+                      "name": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "Country Name",
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": true,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "province": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "code": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "Province Code",
+                          "searchable": false,
+                          "required": false,
+                          "positiveOrZero": false,
+                          "readonly": true,
+                          "multilingual": false,
+                          "maxLength": 20
+                        }
+                      },
+                      "name": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "Province Name",
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": true,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "city": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "code": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "City Code",
+                          "searchable": false,
+                          "required": false,
+                          "positiveOrZero": false,
+                          "readonly": true,
+                          "multilingual": false,
+                          "maxLength": 20
+                        }
+                      },
+                      "name": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "City Name",
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": true,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "fullAddress": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": false,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Shipping Address",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": true,
+                    "positiveOrZero": false
+                  }
+                },
+                "county": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "code": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "County Code",
+                          "searchable": false,
+                          "required": false,
+                          "positiveOrZero": false,
+                          "readonly": true,
+                          "multilingual": false,
+                          "maxLength": 20
+                        }
+                      },
+                      "name": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "label": "County Name",
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": true,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "detailAddress": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Detail Address",
+                    "searchable": false,
+                    "required": false,
+                    "positiveOrZero": false,
+                    "readonly": true,
+                    "multilingual": true,
+                    "maxLength": 200
+                  }
+                }
+              }
+            }
+          },
+          "category": {
+            "isUdf": false,
+            "dataType": "Object",
+            "boPropertyType": "Reference",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Category",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "properties": {
+                "fullName": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Category FullName",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": true,
+                    "positiveOrZero": false
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "label": "Category Id",
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            },
+            "referenceConfig": {
+              "referenceRo": "categories",
+              "useSearch": false,
+              "mappings": [
+                {
+                  "mashup": true,
+                  "from": "fullName",
+                  "to": "category.fullName",
+                  "type": "CACHED"
+                },
+                {
+                  "from": "id",
+                  "to": "category.id",
+                  "isKey": true,
+                  "type": "CACHED"
+                }
+              ]
+            }
+          },
+          "productPictures": {
+            "isUdf": false,
+            "dataType": "Collection",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Product Pictures",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "embedded": {
+              "ro": {
+                "name": {
+                  "singular": "salesInformationProductPicture",
+                  "plural": "salesInformationProductPictures"
+                },
+                "title": null,
+                "attributes": {
+                  "sensitiveWordDetection": false,
+                  "canExport": false,
+                  "udfEnabled": false,
+                  "canImport": false,
+                  "multilingual": false
+                }
+              },
+              "properties": {
+                "isDefault": {
+                  "isUdf": false,
+                  "dataType": "Enum",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "validValues": {
+                    "Y": {
+                      "order": 0,
+                      "label": "Y"
+                    },
+                    "N": {
+                      "order": 1,
+                      "label": "N"
+                    }
+                  }
+                },
+                "lastModifiedTime": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "DateTime",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "createdBy": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "boPropertyType": "Reference",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "nickname": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 50,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "id": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "boPropertyType": "Identity",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "username": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 50,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  },
+                  "referenceConfig": {
+                    "referenceRo": "users",
+                    "useSearch": false,
+                    "mappings": [
+                      {
+                        "from": "nickname",
+                        "to": "createdBy.nickname",
+                        "type": "CACHED"
+                      },
+                      {
+                        "from": "username",
+                        "to": "createdBy.username",
+                        "type": "CACHED"
+                      },
+                      {
+                        "from": "id",
+                        "to": "createdBy.id",
+                        "isKey": true,
+                        "type": "CACHED"
+                      }
+                    ]
+                  }
+                },
+                "lastModifiedBy": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "boPropertyType": "Reference",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "nickname": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 50,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "id": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "boPropertyType": "Identity",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "username": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 50,
+                          "positiveOrZero": false
+                        }
+                      }
+                    }
+                  },
+                  "referenceConfig": {
+                    "referenceRo": "users",
+                    "useSearch": false,
+                    "mappings": [
+                      {
+                        "from": "nickname",
+                        "to": "lastModifiedBy.nickname",
+                        "type": "CACHED"
+                      },
+                      {
+                        "from": "username",
+                        "to": "lastModifiedBy.username",
+                        "type": "CACHED"
+                      },
+                      {
+                        "from": "id",
+                        "to": "lastModifiedBy.id",
+                        "isKey": true,
+                        "type": "CACHED"
+                      }
+                    ]
+                  }
+                },
+                "createdTime": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "DateTime",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "id": {
+                  "isUdf": false,
+                  "dataType": "String",
+                  "boPropertyType": "Identity",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                },
+                "productGalleryPicture": {
+                  "isUdf": false,
+                  "dataType": "Object",
+                  "boPropertyType": "Reference",
+                  "attributes": {
+                    "filterable": false,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  },
+                  "embedded": {
+                    "properties": {
+                      "name": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "attributes": {
+                          "visible": true,
+                          "readonly": false,
+                          "uiReadonly": false,
+                          "sortable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 50,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "showUrl": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "boPropertyType": "Image",
+                        "attributes": {
+                          "filterable": false,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "maxLength": 500,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "id": {
+                        "isUdf": false,
+                        "dataType": "String",
+                        "boPropertyType": "Identity",
+                        "attributes": {
+                          "filterable": true,
+                          "pinyinSearchable": false,
+                          "visible": true,
+                          "readonly": true,
+                          "uiReadonly": true,
+                          "fullTextSearchable": false,
+                          "sortable": false,
+                          "searchable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "positiveOrZero": false
+                        }
+                      },
+                      "fileType": {
+                        "isUdf": false,
+                        "dataType": "Enum",
+                        "attributes": {
+                          "visible": true,
+                          "readonly": false,
+                          "uiReadonly": false,
+                          "sortable": false,
+                          "required": false,
+                          "multilingual": false,
+                          "positiveOrZero": false
+                        },
+                        "validValues": {
+                          "JPG": {
+                            "order": 4,
+                            "label": "JPG"
+                          },
+                          "ZIP": {
+                            "order": 12,
+                            "label": "ZIP"
+                          },
+                          "PPTX": {
+                            "order": 11,
+                            "label": "PPTX"
+                          },
+                          "EXCEL": {
+                            "order": 1,
+                            "label": "EXCEL"
+                          },
+                          "WORD": {
+                            "order": 3,
+                            "label": "WORD"
+                          },
+                          "RAR": {
+                            "order": 13,
+                            "label": "RAR"
+                          },
+                          "CSS": {
+                            "order": 15,
+                            "label": "CSS"
+                          },
+                          "GIF": {
+                            "order": 8,
+                            "label": "GIF"
+                          },
+                          "CSV": {
+                            "order": 7,
+                            "label": "CSV"
+                          },
+                          "PNG": {
+                            "order": 6,
+                            "label": "PNG"
+                          },
+                          "JS": {
+                            "order": 14,
+                            "label": "JS"
+                          },
+                          "JPEG": {
+                            "order": 5,
+                            "label": "JPEG"
+                          },
+                          "SPREADSHEET": {
+                            "order": 2,
+                            "label": "SPREADSHEET"
+                          },
+                          "MP4": {
+                            "order": 16,
+                            "label": "MP4"
+                          },
+                          "TXT": {
+                            "order": 9,
+                            "label": "TXT"
+                          },
+                          "PDF": {
+                            "order": 0,
+                            "label": "PDF"
+                          },
+                          "PPT": {
+                            "order": 10,
+                            "label": "PPT"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "referenceConfig": {
+                    "referenceRo": "materials",
+                    "useSearch": false,
+                    "mappings": [
+                      {
+                        "mashup": true,
+                        "from": "attachmentInfo.fileType",
+                        "to": "productGalleryPicture.fileType",
+                        "type": "CACHED"
+                      },
+                      {
+                        "mashup": true,
+                        "from": "name",
+                        "to": "productGalleryPicture.name",
+                        "type": "CACHED"
+                      },
+                      {
+                        "from": "id",
+                        "to": "productGalleryPicture.id",
+                        "isKey": true,
+                        "type": "CACHED"
+                      }
+                    ]
+                  }
+                },
+                "version": {
+                  "isUdf": false,
+                  "dataType": "Numerical",
+                  "attributes": {
+                    "filterable": true,
+                    "pinyinSearchable": false,
+                    "visible": true,
+                    "readonly": true,
+                    "uiReadonly": true,
+                    "fullTextSearchable": false,
+                    "sortable": false,
+                    "searchable": false,
+                    "required": false,
+                    "multilingual": false,
+                    "positiveOrZero": false
+                  }
+                }
+              }
+            }
+          },
+          "status": {
+            "isUdf": false,
+            "dataType": "Enum",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": true,
+              "uiReadonly": true,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "Status",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            },
+            "validValues": {
+              "NEW": {
+                "order": 0,
+                "label": "New",
+                "iconCategory": "Negative"
+              },
+              "LISTED": {
+                "order": 2,
+                "label": "Listed",
+                "iconCategory": "Positive"
+              },
+              "AUDITING": {
+                "order": 1,
+                "label": "System Auditing",
+                "iconCategory": "Processing"
+              },
+              "DELISTED": {
+                "order": 5,
+                "label": "Delisted",
+                "iconCategory": "Negative"
+              },
+              "SYSTEM_APPROVED": {
+                "order": 4,
+                "label": "System Approved",
+                "iconCategory": "Processing"
+              },
+              "SYSTEM_REJECTED": {
+                "order": 3,
+                "label": "System Rejected",
+                "iconCategory": "Warning"
+              },
+              "OPERATOR_DELISTED": {
+                "order": 6,
+                "label": "Operator Delisted",
+                "iconCategory": "Warning"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sku": {
+      "isUdf": false,
+      "dataType": "Object",
+      "attributes": {
+        "filterable": false,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "SKU",
+        "searchable": true,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "embedded": {
+        "properties": {
+          "code": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "SKU Code",
+              "searchable": true,
+              "required": false,
+              "regExp": {
+                "value": "^[a-zA-Z0-9_.-]*$",
+                "errMsg": "Incorrect code format. digit, character, ''-'' and ''_'' is supported"
+              },
+              "positiveOrZero": false,
+              "readonly": false,
+              "multilingual": false,
+              "maxLength": 20
+            }
+          },
+          "name": {
+            "isUdf": false,
+            "dataType": "String",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": true,
+              "visible": true,
+              "uiReadonly": false,
+              "fullTextSearchable": true,
+              "sortable": false,
+              "label": "SKU Name",
+              "searchable": true,
+              "required": true,
+              "positiveOrZero": false,
+              "readonly": false,
+              "multilingual": true,
+              "maxLength": 100
+            }
+          },
+          "id": {
+            "isUdf": false,
+            "dataType": "String",
+            "boPropertyType": "Identity",
+            "attributes": {
+              "filterable": true,
+              "pinyinSearchable": false,
+              "visible": true,
+              "readonly": false,
+              "uiReadonly": false,
+              "fullTextSearchable": false,
+              "sortable": false,
+              "label": "SKU Id",
+              "searchable": false,
+              "required": false,
+              "multilingual": false,
+              "positiveOrZero": false
+            }
+          }
+        }
+      }
+    },
+    "isNewCreated": {
+      "isUdf": false,
+      "dataType": "Enum",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": false,
+        "uiReadonly": false,
+        "fullTextSearchable": false,
+        "deprecated": true,
+        "sortable": false,
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "validValues": {
+        "Y": {
+          "order": 0,
+          "label": "Y"
+        },
+        "N": {
+          "order": 1,
+          "label": "N"
+        }
+      }
+    },
+    "status": {
+      "isUdf": false,
+      "dataType": "Enum",
+      "attributes": {
+        "filterable": true,
+        "pinyinSearchable": false,
+        "visible": true,
+        "readonly": true,
+        "uiReadonly": true,
+        "fullTextSearchable": false,
+        "sortable": false,
+        "label": "Status",
+        "searchable": false,
+        "required": false,
+        "multilingual": false,
+        "positiveOrZero": false
+      },
+      "validValues": {
+        "LISTED": {
+          "order": 0,
+          "label": "Listed",
+          "iconCategory": "Positive"
+        },
+        "DELISTED": {
+          "order": 1,
+          "label": "Delisted",
+          "iconCategory": "Negative"
+        }
+      }
+    }
+  },
+  "layout": null
+}
